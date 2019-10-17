@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul
+{
+list-style-type:none;
+}
+li
+{
+float : left;
+}
+li a, .dropbtn
+{
+text-decoration:none;
+display:inline-block;
+background-color: grey;
+color:white;
+padding: 5px 10px;
+margin: 0px;
+font-size:15px;
+border-right:solid 1px white;
+}
+
+li a:hover
+{
+background-color:black;
+color:white;
+font-size:20px;
+}
+
+.dropbtn:hover
+{
+background-color:red;
+color:white;
+font-size:20px;
+}
+
+.dropdown-content
+{
+display:none;
+background-color:black;
+color:white;
+font-size:15px;
+}
+.dropdown:hover .dropdown-content
+{
+display:block;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href = "#">Home</a></li>
+<li><a href = "#">Menu</a></li>
+<li class = "dropdown"><a class = "dropbtn" href = "#">Dropdown</a>
+<a class = "dropdown-content" href = "#">Link 1</a>
+<a class = "dropdown-content" href = "#">Link 2</a>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function checkForm()
+{
+var name = document.forms["myform"]["name"].value;
+var pass = document.forms["myform"]["pass"].value;
+if(name == "" || pass.length < 8)
+alert("Error! Please try again!");
+}
+</script>
+</head>
+<body>
+<form name = "myform" onsubmit = "checkForm()">
+Name : <input type = "text" name = "name"><br>
+Password : <input type = "password" name = "pass"><br>
+<input type = "submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function setCookie()
+{
+document.cookie = user + ';'
+}
+function getCookie()
+{
+var ca = document.cookie.split(';');
+return ca[0];
+}
+function checkCookie()
+{
+var uname = getCookie();
+if(uname != '' && uname != null)
+alert('Welcome' + uname);
+else
+{
+var uname = prompt("Welcome new user. Please enter username: ");
+setCookie(uname);
+}
+
+}
+
+</script>
+</head>
+<body onload = 'checkCookie()'>
+</body>
+</html>
